@@ -35,7 +35,7 @@ $routes->get('/', 'SigninController::index');
 $routes->get('/signup', 'SignupController::index');
 $routes->post('/signup', 'SignupController::store');
 $routes->get('/upload-image', 'ImageUploadController::index');
-$routes->get('/buku', 'BukuController::index',['Filters' => 'usersAuth']);
+$routes->get('/buku', 'BukuController::index',['filter' => 'usersAuth']);
 $routes->get('/signin', 'SigninController::index');
 /*
  * --------------------------------------------------------------------
